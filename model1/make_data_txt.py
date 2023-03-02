@@ -26,7 +26,7 @@ def make_train_test():
 
 def make_detection():#制作检验集
     filename = 'data/BitmojiDataset/testimages/'#替换成自己存储检验集的位置 1084张图片那里
-    data = pd.read_csv(r'D:\Word  文档\大三上\深度学习\mycode\data\sample_submission.csv', sep=',', header='infer', usecols=[0, 1])
+    data = pd.read_csv(r'D:\Word  文档\大三上\深度学习\mycode\data\sample_submission.csv', sep=',', header='infer', usecols=[0, 1]) #替换自己提交结果文件的位置
     array = data.values[0::, 0::]
     print(array.shape)
     for i in range(array.shape[0]):
